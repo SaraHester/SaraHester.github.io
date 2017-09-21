@@ -1,22 +1,91 @@
+a {
+    color: black;
+}
 hr {
     border-color: #870000;
+    width: 250px;
+}
+header,
+footer {
+    color: black;
+    /* background-color: #870000;
+    border-radius: 12px; */
+    font-size: 22px;
+}
+footer {
+    position: relative;
 }
 body {
     background-color: black;
+    background: url(/home/basecamp/Downloads/kelli-tungay-324329.jpg);
+    /* no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-p {
-    color: #870000;
-}
-h1 {
+p,
+h1,
+h2,
+h4,
+li {
     color: #870000;
 }
 .namebar {
     color: #870000;
     font-size: 40px;
+    font-family: 'Nimbus Mono L', serif;
+    font-weight: lighter;
+    font-style: oblique;
 }
-.linkbar {
-    background-color: #870000;
-    padding: 10px;
-    font-size: 22px;
-    /* padding-left: 20em; */
+img {
+    height: 200px;
+    width: 248px;
+}
+/* .About { */
+/* position: relative;
+    background-color: #5b5a5a;
+    opacity: 0.5;
+    height: 120px;
+    width: 300px;
+} */
+
+/* Utilities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.u-pull-right {
+    float: right;
+}
+
+/* Basics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 550 px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
